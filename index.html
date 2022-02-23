@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria para Odin!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+
+<body>
+    
+<header>
+
+    <h1>Bitácora de tus lecturas!</h1>
+
+</header>
+    
+
+<main>
+
+    <p>
+        Agregá tus libros!  <button class="addIcon" id="openCreateBook">+</button>
+    </p>
+
+    <div class="main-table">
+
+        <table id="tablaLibros">
+            <tr>
+              <th>Titulo</th>
+              <th>Autor</th>
+              <th>Paginas</th>
+              <th class="admin">Borrar</th>
+            </tr>
+        </table>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <p>Creado para el projecto Odin - </p>
+
+</footer>
+
+<div class="overlay hidden ">
+
+    <div class="modal_addbook hidden">
+
+        <form action="" class="creacionLibro">
+            <div class="flex-end">
+                <button class="closeIcon" id="closeBook" type="button">&times</button>
+            </div>
+
+            <div class="input_conteiner">
+                <label for="GET-TITTLE">Titulo </label>
+                <input type="text" id="GET-TITTLE" name="titulo" placeholder="Harry Potter.." requires>
+            </div>
+            <div class="input_conteiner">
+                <label for="GET-PAGES">Autor</label>
+                <input type="text" id="GET-AUTHOR" name="autor" placeholder="J. K. Rowling.." required>
+            </div>
+            <div class="input_conteiner">
+                <label for="GET-AUTHOR">Paginas del libro </label>
+                <input type="number" id="GET-PAGES" name="paginas" min="1" required>
+            </div>
+            <div class="flex-center">
+                <button class="addIcon" id="createBook" type="button">+</button>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
